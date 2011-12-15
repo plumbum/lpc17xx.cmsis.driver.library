@@ -4,6 +4,9 @@
 # Connect to the OpenOCD server
 target remote localhost:3333 
 
+#monitor interface swd
+#monitor interface jtag
+
 #delays on reset lines
 monitor jtag_nsrst_delay 200
 monitor jtag_ntrst_delay 200
