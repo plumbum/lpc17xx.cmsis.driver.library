@@ -37,3 +37,5 @@ EXDIR		=Project_Template/Eclipse_GNU
 include ../../../makesection/makeconfig 
 EXDIRINC	=$(PROJ_ROOT)/Examples/$(EXDIR)
 include $(PROJ_ROOT)/makesection/makerule/example/makefile.ex
+include $(PROJ_ROOT)/makesection/makerule/LPC17xx/openocd.mk
+

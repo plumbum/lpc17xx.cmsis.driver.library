@@ -86,6 +86,7 @@ OBJDUMP  		= $(TOOLCHAIN)-objdump
 OBJCOPY  		= $(TOOLCHAIN)-objcopy
 READELF  		= $(TOOLCHAIN)-readelf
 CODESIZE 		= $(TOOLCHAIN)-size
+GDB       		= $(TOOLCHAIN)-gdb
 
 
 #================ LD flag ========================
