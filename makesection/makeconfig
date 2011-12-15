@@ -12,7 +12,8 @@
 #
 ########################################################################
 
-PROJ_ROOT		=${HOME}/cortex-m3/lpc17xx.cmsis.driver.library
+#PROJ_ROOT		=${HOME}/cortex-m3/lpc17xx.cmsis.driver.library
+PROJ_ROOT		=${HOME}/Projects/lpc17xx.cmsis.driver.library
 CMCORE_TYPE		=CM3
 DEVICE			=LPC17xx
 MANUFACTURE		=NXP

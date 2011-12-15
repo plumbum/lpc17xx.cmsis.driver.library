@@ -45,7 +45,7 @@ include $(PROJ_ROOT)/makesection/makerule/$(DEVICE)/make.$(DEVICE).$(TOOL)
 # Included Cortex-Mx core files  
 #
 ########################################################################
-include $(PROJ_ROOT)\makesection\makerule\common\make.rules.ftypes
+include $(PROJ_ROOT)/makesection/makerule/common/make.rules.ftypes
 ADDOBJS     += $(PROJ_ROOT)/Core/$(CMCORE_TYPE)/CoreSupport/core_cm3.o 
 ADDOBJS     += $(PROJ_ROOT)/Core/$(CMCORE_TYPE)/DeviceSupport/$(MANUFACTURE)/$(DEVICE)/system_$(DEVICE).o 
 

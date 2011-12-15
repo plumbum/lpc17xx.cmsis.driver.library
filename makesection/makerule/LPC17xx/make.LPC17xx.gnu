@@ -24,10 +24,11 @@ include $(PROJ_ROOT)/makesection/makerule/common/make.rules.environment
 #GNUTOOLS	='$(GNU_INSTALL_ROOT)/bin'
 #THUMB2GNULIB 	='$(GNU_INSTALL_ROOT)/lib/gcc/arm-none-eabi/$(GNU_VERSION)/thumb2'
 #THUMB2GNULIB2	='$(GNU_INSTALL_ROOT)/arm-none-eabi/lib/thumb2'
-TOOLCHAIN	= arm-bare_newlib_cortex_m3_nommu-eabi
+#TOOLCHAIN	= arm-bare_newlib_cortex_m3_nommu-eabi
+TOOLCHAIN	= arm-none-eabi
 
 CPU       		= cortex-m3
-OPTIM			= 0
+OPTIM			= 2
 
 #===================== C compile flag ============================
 CFLAGS    		= -c 
@@ -76,7 +77,7 @@ AFLAGS    		= -mcpu=$(CPU)
 AFLAGS   		+= -I$(FWLIB_INC_DIR) -I$(CMCORE_INC_DIR) -I$(DEVICE_INC_DIR) -gdwarf-2 
 
 
-CC       		= $(TOOLCHAIN)-cc
+CC       		= $(TOOLCHAIN)-gcc
 AS       		= $(TOOLCHAIN)-as
 AR       		= $(TOOLCHAIN)-ar -r
 LD       		= $(TOOLCHAIN)-gcc
