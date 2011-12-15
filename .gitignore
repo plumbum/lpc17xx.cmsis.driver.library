@@ -1,0 +1,9 @@
+.*.swp
+*.hex
+*.srec
+*.elf
+*.o
+*.map
+.depend
+dep.wrn
+
